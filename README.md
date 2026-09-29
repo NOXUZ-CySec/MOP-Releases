@@ -4,9 +4,19 @@ Aplicativo de monitoramento operacional para Windows, desenvolvido por **NOXUZ**
 
 Este repositório é destinado à distribuição dos instaladores oficiais, arquivos do atualizador automático e notas de versão do MOP. O código-fonte do aplicativo permanece privado.
 
-## Versão atual — 2.2.1
+## Versão atual — 2.2.2
 
-A versão pública mais recente é a **MOP 2.2.1**.
+A versão pública mais recente é a **MOP 2.2.2**.
+
+### Novidades da 2.2.2
+
+- Passagem de turno reformulada em duas etapas independentes: **entrega** e **recebimento**.
+- Autoria automática pelo usuário autenticado, eliminando campos manuais redundantes.
+- Ciência das pendências críticas exigida somente no recebimento.
+- Sincronização ajustada para completar uma entrega pendente com o recebimento sem reabrir passagens concluídas.
+- Tutorial guiado no primeiro login, com opção de pular e refazer pela aba **Sobre**.
+- Tutorial adaptado ao perfil do usuário e com apresentação visual menos intrusiva.
+- Correções acumuladas de autoria, consistência operacional e testes aplicadas desde a 2.2.1.
 
 ### Correção da 2.2.1
 
@@ -26,13 +36,13 @@ A versão pública mais recente é a **MOP 2.2.1**.
 
 Acesse a página de [Releases](https://github.com/NOXUZ-CySec/MOP-Releases/releases) e utilize o instalador da versão mais recente.
 
-Para a versão 2.2.1, os arquivos principais são `MOP-Instalador-2.2.1.exe`, `MOP-Instalador-2.2.1.exe.blockmap` e `latest.yml`.
+Para a versão 2.2.2, os arquivos principais são `MOP-Instalador-2.2.2.exe`, `MOP-Instalador-2.2.2.exe.blockmap` e `latest.yml`.
 
 Os arquivos “Source code” gerados automaticamente pelo GitHub não correspondem ao instalador do MOP.
 
 ## Atualização automática
 
-A partir da versão **2.1.1**, o MOP pode consultar este repositório, detectar novas versões, baixar os arquivos necessários e oferecer a reinicialização para instalar a atualização. A **2.2.1** foi publicada especificamente para que clientes na 2.2.0 recebam automaticamente a correção do fluxo de status.
+A partir da versão **2.1.1**, o MOP pode consultar este repositório, detectar novas versões, baixar os arquivos necessários e oferecer a reinicialização para instalar a atualização. A **2.2.2** é a versão atual do canal de testes e será oferecida automaticamente aos clientes compatíveis em versões anteriores.
 
 Para que uma release seja reconhecida corretamente, ela deve conter o instalador, o arquivo `.blockmap` e o `latest.yml` produzidos pelo processo oficial de build.
 
